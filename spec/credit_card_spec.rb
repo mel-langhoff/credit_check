@@ -5,7 +5,18 @@ RSpec.describe CreditCard do
     it "exists" do
         credit_card = CreditCard.new("5541808923795240", 15000)
 
+        expect(credit_card).to be_a CreditCard
+    end
+
+    it "#card_number" do
+        credit_card = CreditCard.new("5541808923795240", 15000)
+
         expect(credit_card.card_number).to eq("5541808923795240")
+    end
+
+    it "#limit" do
+        credit_card = CreditCard.new("5541808923795240", 15000)
+
         expect(credit_card.limit).to eq(15000)
     end
 
