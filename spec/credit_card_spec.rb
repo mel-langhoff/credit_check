@@ -15,10 +15,10 @@ RSpec.describe CreditCard do
         expect(credit_card.last_four).to eq("5240")
     end
 
-    # it "#is_valid?" do
-    #     credit_card = CreditCard.new("5541808923795240", 15000)
+    it "#is_valid?" do
+        credit_card = CreditCard.new("5541808923795240", 15000)
 
-    #     expect(credit_card.is_valid?).to be true
-    # end
+        expect(credit_card.is_valid?).to be true
+    end
 
 end
