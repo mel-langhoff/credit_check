@@ -28,12 +28,12 @@ class UserInterface
                 doubled_digit = card_digit * 2
 
                 if doubled_digit > 9
-                digit_sum += doubled_digit.to_s.chars.map(&:to_i).sum
+                digit_sum = doubled_digit.to_s.chars.map(&:to_i).sum
                 end
 
-                digit_sum += Array(doubled_digit).sum
+                digit_sum = Array(doubled_digit).sum
             else
-                digit_sum += card_digit
+                digit_sum = card_digit
             end
         end
         digit_sum

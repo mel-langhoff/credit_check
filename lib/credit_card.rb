@@ -18,9 +18,9 @@ class CreditCard
             digit_sum = doubled_digit.to_s.chars.map(&:to_i).sum
             end
 
-            digit_sum += Array(doubled_digit).sum
+            digit_sum = Array(doubled_digit).sum
         else
-            digit_sum += card_digit
+            digit_sum = card_digit
         end
     end
 
