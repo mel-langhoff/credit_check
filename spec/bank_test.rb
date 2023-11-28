@@ -1,5 +1,5 @@
-# require 'minitest/autorun'
-# require 'minitest/pride'
+require 'minitest/autorun'
+require 'minitest/pride'
 require './lib/bank'
 require './lib/credit_card'
 
