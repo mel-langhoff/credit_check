@@ -11,11 +11,11 @@ class UserInterface
         @card_number = gets.chomp
         @digit_sum = calculate_sum_digit
 
-                if @digit_sum % 10 == 0
-                    puts "The number #{card_number} is valid!"
-                else
-                    puts "The number #{card_number} is invalid!"
-                end
+            if @digit_sum % 10 == 0
+                puts "The number #{card_number} is valid!"
+            else
+                puts "The number #{card_number} is invalid!"
+            end
 
         end
 
